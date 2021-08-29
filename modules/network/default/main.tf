@@ -75,10 +75,10 @@ variable "subnetwork_log_config" {
   description = "settings for subnetwork flow logs"
   default = {
     aggregation_interval = "INTERVAL_5_SEC"
-    flow_sampling = 0.5
-    metadata = "INCLUDE_ALL_METADATA"
-    metadata_fields = []
-    filter_expr = ""
+    flow_sampling        = 0.5
+    metadata             = "INCLUDE_ALL_METADATA"
+    metadata_fields      = []
+    filter_expr          = ""
   }
 }
 
@@ -204,4 +204,3 @@ output "gke_pods_1" {
 output "gke_services_1" {
   value = "gke-services-1"
 }
-

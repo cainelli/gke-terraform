@@ -56,14 +56,14 @@ resource "google_container_node_pool" "node_pool" {
   }
 
   node_config {
-    image_type   = "COS"
-    disk_size_gb = var.disk_size_in_gb
-    machine_type = var.machine_type
-    labels       = var.node_labels
-    disk_type    = var.disk_type
-    tags         = var.node_tags
+    image_type      = "COS"
+    disk_size_gb    = var.disk_size_in_gb
+    machine_type    = var.machine_type
+    labels          = var.node_labels
+    disk_type       = var.disk_type
+    tags            = var.node_tags
     service_account = var.node_service_account_email
-    preemptible  = var.preemptible_nodes
+    preemptible     = var.preemptible_nodes
     shielded_instance_config {
       enable_secure_boot = var.enable_secure_boot
     }
